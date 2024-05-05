@@ -1,0 +1,316 @@
+*, *:after, *:before {
+    padding:0;
+    margin:0;
+    font-family:'Osawald', serif;
+    }
+
+    body {
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        scroll-behavior:smooth;
+    }
+ 
+    .main {
+        position:absolute;
+        top:115vh;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        list-style:none;
+        width:955px;
+        height:450px;
+        border-radius:30px;
+        overflow:hidden;
+        box-shadow:1px 1px 3px 1px;
+    }
+ 
+    .tab {
+        position:relative;
+        width:190px;
+        height:450px;
+        float:left;
+        border-left:1px solid rgb(0, 0, 0);
+        transition:all 0.7s;
+        box-shadow:-2px 0 10px 2px;
+    }
+ 
+    ul li:first-child {
+        border:none;
+    }
+ 
+    span {
+        display:block;
+        position:absolute;
+        top:0;
+        width:50%;
+        color:rgb(255, 255, 255);
+        white-space:nowrap;
+        padding:20px;
+        background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); 
+        font-weight: 700;
+    }
+
+    .main:hover .tab {
+        width:50px;  
+    }
+ 
+ 
+    .main .tab:hover {
+        width:750px;
+    }
+  
+    .navbar ul{
+        list-style: none;
+        background-color: #420c0c ;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        display: flex; 
+        justify-content: center;
+        padding: 20px;
+    }
+  
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 5px 50px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Oswald';
+    }
+  
+    .navbar li {
+        background-color: #330909;
+        margin: 3px;
+    }
+  
+    .navbar li:hover {
+        background-color: rgb(248, 170, 1);
+        color: #420c0c;
+        transition: 0.3s;
+    }
+   
+    .navbar li:not(:last-child) a {
+        margin-right: 10px;  
+    }
+  
+    .logo {
+        position: absolute;
+        left: 60px;
+        top: 15px;
+        filter: drop-shadow(0px 0px 6px rgba(255, 213, 2, 5));
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        width: 74.2%;
+        padding: 5px;
+        font-family: "Nunito", sans-serif;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .h1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        border: 0px solid;
+        border-radius: 10px;
+        background-color: rgba(197, 197, 197, 0.315);
+        padding: 10px;
+    }
+
+    .container > .shs {
+        position: relative;
+        margin: auto;
+        margin-top: 2vh;
+        width: 100vh;
+        height: auto;
+        font-size: medium;
+        text-align: justify;
+        border: 0px solid;
+        border-radius: 10px;
+        background-color: rgba(197, 197, 197, 0.315);
+        padding: 10px;
+    }
+
+    .container > .acads, .tvl {
+        position: relative;
+        margin: auto;
+        margin-top: 2vh;
+        width: 100vh;
+        height: auto;
+        text-align: center;
+        font-size: medium;
+        border: 0px solid;
+        border-radius: 10px;
+        background-color: rgba(197, 197, 197, 0.315);
+        padding: 10px;
+    }
+
+    .container > .tvl {
+        position: relative;
+        margin: auto;
+        margin-top: 2vh;
+        width: 100vh;
+        height: auto;
+        text-align: center;
+        font-size: medium;
+        border: 0px solid;
+        border-radius: 10px;
+        background-color: rgba(197, 197, 197, 0.315);
+        padding: 10px;
+    }
+
+    .container > .ict {
+        position: relative;
+        margin: auto;
+        margin-top: 2vh;
+        width: 50vh;
+        height: auto;
+        text-align: center;
+        font-size: medium;
+        border: 0px solid;
+        border-radius: 10px;
+        background-color: rgba(197, 197, 197, 0.315);
+        padding: 10px;
+    }
+
+    .textOverImage {
+        width: 270px;
+        height: 300px;
+        display: inline-block;
+        background-size: cover;
+        border:1px solid rgba(204, 202, 202, 0.856);
+        border-radius: 4px;
+        margin: 4px;
+        margin-top: 20px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }   
+
+    .textOverImage > input {
+        display:none;
+    }
+
+    .textOverImage > div,.textOverImage > h2 {
+        position: absolute;
+        background-color: rgba(255,255,255,0.8);
+        bottom: 200px;
+        left: 4px;
+        right: 4px;
+        border-radius: 4px;
+        padding: 8px;
+        overflow: hidden;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div {
+        bottom: 4px;
+        opacity: 1;
+    }
+
+    .textOverImage > input:checked + h2 {
+        bottom: -20px;
+        opacity: 0;
+    }
+
+    .textOverImage > h2 {
+        margin: 0;
+    }
+
+    footer {
+        position: relative;
+        color: #fff;
+        padding: 20px 0;
+        background-color: #420c0c;
+      
+      }
+      
+      .footer-content {
+        max-width: 1200px;
+
+        margin-left: 180px;
+        margin-right: 180px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .logo-container {
+        display: flex;
+        align-items: left;
+      
+      }
+      
+      .logo-container img {
+        height: 50px;
+        margin-right: 10px;
+      }
+      
+      
+      
+      .copyright-container {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        font-size: 11px;
+      
+      
+      }
+      
+      .logo-text {
+        font-size: 10px;
+        line-height: 2px;
+        font-size: 20px;
+        font-family: 'Oswald';
+        padding-bottom: 1px;
+      }
+      
+      
+      
+      
+      .socialicons {
+        display: flex;
+        cursor: pointer;
+        margin-top: 35px;
+      
+      }
+      
+      .socialicons a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+      
+        background-color: white;
+      }
+      
+      .socialicons a {
+        font-size: 20px;
+        color: black;
+      }
+      
+      
+      
+      .loglog {
+        margin: 12px;
+        min-height: 5px;
+      
+      
+      }
+      
+      .grey {
+        background-color: #420c0c;
+        min-height: 250px;
+      
+      }
+    
+    
