@@ -10,6 +10,7 @@
         font-family: "Nunito", sans-serif;
         font-optical-sizing: auto;
         scroll-behavior:smooth;
+        overflow:hidden;
     }
  
     .main {
